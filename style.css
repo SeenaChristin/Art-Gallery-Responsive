@@ -1,7 +1,7 @@
 html {
   font-size: 10px;
 }
-body {
+* {
   margin: 0;
   padding: 0;
   max-width: 1440px;
@@ -316,5 +316,71 @@ body {
   }
   .location-btn img {
     width: auto;
+  }
+}
+
+/* Locations Map CSS */
+
+.backToHome {
+  position: absolute;
+  top: 0;
+}
+.map img {
+  width: 100%;
+}
+.pin {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+.details {
+  background-color: #151515;
+  padding-top: 8%;
+  padding-bottom: 6%;
+  padding-left: 4%;
+}
+.details .title {
+  color: white;
+  margin-bottom: 8%;
+}
+.details .description {
+  color: white;
+  width: 80%;
+}
+.aboutUs {
+  background: var(--Gold, #d5966c);
+  padding: 40px 20px;
+}
+.aboutUs .description {
+  width: 80%;
+}
+.title2 {
+  color: var(--Gold, #d5966c);
+  font-family: Big Shoulders Display;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px; /* 100% */
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .wrapper {
+    flex-basis: 50%;
+  }
+  .details {
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+  }
+  .detaisl .title {
+    font-size: 55px;
+    line-height: 50px;
+  }
+  .aboutUs {
+    display: flex;
+    justify-content: space-around;
+  }
+  .aboutUs .description {
+    flex-basis: 40%;
   }
 }
