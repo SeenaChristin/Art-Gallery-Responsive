@@ -1,0 +1,320 @@
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15%;
+}
+.header {
+  background-image: url("./images/MobHeroBg.jpg");
+  background-repeat: no-repeat;
+  height: 240px;
+  background-position-x: center;
+}
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 10px;
+  margin-bottom: 20%;
+}
+.heading {
+  color: var(--Almost-Black, #151515);
+  font-family: Big Shoulders Display;
+  font-size: 6em;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 55px; /* 91.667% */
+  text-transform: uppercase;
+}
+.title {
+  color: var(--Almost-Black, #151515);
+  font-family: Big Shoulders Display;
+  font-size: 5em;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 45px; /* 90% */
+  text-transform: uppercase;
+}
+.description {
+  color: var(--Dark-Grey, #444);
+  font-family: Outfit;
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 28px; /* 155.556% */
+  padding: 20px 0;
+}
+
+.btn-txt {
+  background-color: var(--Almost-Black, #151515);
+  color: var(--White, #fff);
+  font-family: Big Shoulders Display;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.636px;
+  height: 100%;
+  flex-basis: 60%;
+}
+.location-btn img {
+  width: 70%;
+}
+.poster {
+  width: 100%;
+}
+.black-box {
+  background: var(--Almost-Black, #151515);
+  padding: 29px;
+  margin-bottom: 0px;
+}
+.black-box .description {
+  color: var(--White, #fff);
+}
+.black-box .title {
+  color: var(--White, #fff);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .poster-tab {
+    display: none;
+  }
+  .poster-desktop {
+    display: none;
+  }
+  .header {
+    scale: 1.1;
+  }
+  .container.one {
+    margin-top: 2vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .header {
+    background-image: url("./images/TabBanner.jpg");
+    background-size: contain;
+    background-position-x: left;
+    height: 70vh;
+    flex-basis: 49%;
+  }
+  .heading {
+    font-size: 7em;
+    line-height: 65px;
+  }
+  .container {
+    flex-basis: 45%;
+    justify-content: flex-start;
+    left: -7%;
+    position: relative;
+    margin-top: 14%;
+  }
+  .tab-view {
+    flex-basis: 100%;
+    display: inline-block;
+    margin-top: 0px;
+    left: 0px;
+    margin-bottom: 0px;
+    padding: 0 22px;
+  }
+  .gallery {
+    float: right;
+  }
+  .gallery img {
+    width: 60vw;
+  }
+  .bench {
+    display: inline-block;
+  }
+  .people {
+    display: inline-block;
+    position: relative;
+    top: -27.3%;
+  }
+  .black-box {
+    width: 31vw;
+    float: right;
+    position: relative;
+    top: -26.3%;
+    padding: 99px 25px;
+  }
+  .bench img {
+    width: 56vw;
+  }
+  .people img {
+    width: 37vw;
+  }
+  .poster {
+    display: none;
+  }
+  .poster-desktop {
+    display: none;
+  }
+  .tab-view .title {
+    order: 1;
+    width: 30vw;
+  }
+  .tab-view .description {
+    order: 1;
+    width: 30vw;
+  }
+  .tab-view .gallery {
+    order: 2;
+  }
+  .tab-view .bench {
+    order: 3;
+  }
+  .tab-view .people {
+    order: 4;
+  }
+  .tab-view .black-box {
+    order: 5;
+  }
+  .tab-footer {
+    left: 0;
+    flex-basis: 100%;
+    margin-top: -40%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 8%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .desktop-div {
+    background-color: var(--Almost-Black, #151515);
+    height: 100vh;
+    flex-basis: 24%;
+  }
+  .header {
+    background-image: url("./images/TabBanner.jpg");
+    background-size: cover;
+    background-position-x: left;
+    height: 100vh;
+    flex-basis: 39%;
+    margin-bottom: 10vh;
+    z-index: -1;
+  }
+  .heading {
+    position: relative;
+    left: -175%;
+    mix-blend-mode: difference;
+    top: 30%;
+    color: white;
+    font-family: Big Shoulders Display;
+    font-size: 9.6em;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 88px; /* 91.667% */
+    text-transform: uppercase;
+  }
+  .description {
+    font-size: 2.2em;
+    line-height: 32px;
+  }
+  .title {
+    font-size: 6em;
+    line-height: 60px;
+  }
+  .container {
+    flex-basis: 32%;
+    justify-content: flex-start;
+    position: relative;
+    left: -4%;
+  }
+  .tab-view {
+    flex-basis: 100%;
+    display: inline-block;
+    margin-top: 0px;
+    left: 0px;
+    margin-bottom: 0px;
+    padding: 0 10%;
+  }
+  .gallery {
+    float: right;
+  }
+  .gallery img {
+    width: 45vw;
+  }
+  .bench {
+    display: inline-block;
+    margin-top: 2%;
+  }
+  .people {
+    display: inline-block;
+    position: relative;
+    top: -26.3%;
+    margin-left: 2%;
+  }
+  .black-box {
+    width: 28vw;
+    float: right;
+    position: relative;
+    top: -24.3%;
+    padding: 6.2% 25px;
+  }
+  .bench img {
+    width: 45vw;
+  }
+  .people img {
+    width: 32vw;
+  }
+  .poster {
+    display: none;
+  }
+  .poster-tab {
+    display: none;
+  }
+  .tab-view .title {
+    order: 1;
+    width: 28vw;
+  }
+  .tab-view .description {
+    order: 1;
+    width: 30vw;
+  }
+  .tab-view .gallery {
+    order: 2;
+  }
+  .tab-view .bench {
+    order: 3;
+  }
+  .tab-view .people {
+    order: 4;
+  }
+  .tab-view .black-box {
+    order: 5;
+  }
+  .tab-footer {
+    left: 0;
+    flex-basis: 100%;
+    margin-top: -15%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 19%;
+    padding: 6%;
+  }
+  .tab-footer .description {
+    padding: 0;
+  }
+  .location-btn img {
+    width: auto;
+  }
+}
